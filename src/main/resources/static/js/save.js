@@ -1,5 +1,5 @@
 function board_save(){
-    alert("save");
+alert("Save");
     let form = $("#saveform")[0];
     let formdata = new FormData(form);
      $.ajax({
@@ -9,7 +9,7 @@ function board_save(){
         processData : false,
         contentType: false,
         success : function(result){
-            alert(result);
+            location.href = "/";
         }
     });
 }
